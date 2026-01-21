@@ -1,0 +1,112 @@
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.honk {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: khaki;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    background-color: khaki;
+    color: orange;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+h2 {
+    background-color: cornsilk;
+    color: orangered;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 30px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px black;
+    border: 2px solid black;
+}
+
+p {
+    padding: 10px;
+    text-align: center;
+}
+
+ul {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#experience {
+    display: block;
+}
+
+#connect {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    font-size: 18px;
+    color: hotpink;
+}
+
+a:hover {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.github-logo {
+    width: 25px;
+    height: 25px;
+}
+
+.github-logo:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.sumna-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 300px;
+    border-radius: 10%;
+}
