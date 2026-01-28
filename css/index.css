@@ -45,9 +45,10 @@ body {
 h1 {
     background-color: khaki;
     text-align: center;
-    font-size: 6rem;
+    font-size: 4rem;
     padding: 10px;
     text-transform: uppercase;
+    margin: 0 auto;
 }
 
 h2 {
@@ -55,18 +56,18 @@ h2 {
     color: rgb(246, 53, 149);
     text-align: center;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 30px;
     text-transform: uppercase;
     text-shadow: 2px 2px 3px black;
     border: 2px solid black;
+    margin-top: 0;
 }
 
 p {
     padding: 10px;
     text-align: center;
-    font-size: .8rem;
-    margin: 20px;
+    font-size: .6rem;
 }
 
 ul {
@@ -74,7 +75,15 @@ ul {
     margin: 0 auto;
 }
 
+#about {
+    margin-bottom: .5rem;
+}
+
 /* Experience */
+#experience {
+    margin-bottom: 1rem;
+}
+
 .ctd-info {
     display: flex;
     flex-direction: row;
@@ -83,19 +92,44 @@ ul {
 
 .ctd-title {
     font-weight: bold;
-    font-size: .8rem;
+    font-size: .7rem;
+    margin-bottom: .5rem;
 }
 
 .ctd-date {
     font-style: italic;
-    font-size: .7rem;
+    font-size: .6rem;
+    margin-bottom: .5rem;
 }
 
 #experience li {
-    font-size: .7rem;
+    font-size: .6rem;
+    margin-bottom: .5rem;
 }
 
 /* Connect */
+.connect-links {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: 3rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    place-items: center;
+}
+
+.fa-envelope,
+.fa-github,
+.fa-linkedin {
+    width: 100%;
+}
+
+.connect-links a:hover,
+.connect-links a:focus {
+    font-size: 2rem;
+}
+
+/* Connect old
 .connect-links {
     display: flex;
     flex-direction: row;
@@ -123,6 +157,7 @@ ul {
 .github-logo:focus {
     width: 80px;
 }
+*/
 
 /* Misc. */
 .sumna-photo {
@@ -142,39 +177,128 @@ ul {
 /* ==========
 Navigation 
 ========== */
-header {
-    position: sticky;
-    top: 0;
+nav {
     background-color: orange;
     z-index: 1;
     opacity: .8;
     padding: 10px;
     font-weight: bold;
-}
-
-nav {
     display: flex;
-    flex-direction: row;
-    position: sticky;
+    justify-content: center;
 }
 
 nav ul {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style: none;
     gap: 20px;
+    text-align: center;
 }
 
 nav a {
     text-decoration: none;
-    color: khaki;
+    color: rgb(246, 246, 242);
     -webkit-text-stroke: 2px black;
     text-stroke: 2px black;
+    font-size: 1rem;
 }
 
 nav a:hover,
 nav a:focus {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     text-decoration: underline;
     color: red;
+}
+
+/* =============
+    TABLET
+    media query
+============= */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        position: sticky;
+        top: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        color: cornsilk;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    
+    .photo-container {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .about-container {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .about-me {
+        text-align: center;
+        font-size: .9rem;
+    }
+
+    .ctd-title {
+        font-size: 1rem;
+    }
+
+    .ctd-date {
+        font-size: 1rem;
+    }
+
+    #experience li {
+    font-size: .8rem;
+    }
+
+}
+
+/* =============
+    Laptop
+    media query
+============= */
+@media (min-width: 1024px) {
+
+    h1 {
+        font-size: 8rem;
+    }
+
+    h2 {
+        background-color: rgb(236, 232, 232);
+        color: orange;
+    }
+
+    nav a {
+        font-size: 1.3rem;
+        color: darkgrey;
+    }
+
+    nav a:hover,
+    nav a:focus {
+        font-size: 1.4rem;
+        color: black;
+    }
+
+    .photo-container {
+        max-width: 300px;
+    }
 }

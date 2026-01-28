@@ -8,27 +8,33 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Honk:MORF@15&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css" />
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#connect">Connect</a></li>
-                </ul>
-            </nav>
-        </header>
         <h1 class="honk">Sumna Chea</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#connect">Connect</a></li>
+            </ul>
+        </nav>
+        
+        <h2>About</h2>
         <section id="about">
-            <h2>About</h2>
-            <img class="sumna-photo" src="PNG/sumna.jpg" alt="self-photo" />
-            <p>Proud <span class="flag">🇰🇭</span><strong>Cambodian<span class="flag">🇰🇭</span>.</strong>  I enjoy reading, listening to music, and watching t.v.  I love learning to code.  I am currently trying to build a strong foundation in programming and problem-solving.  On path to become a data engineer where I am focusing on developing the technical skills needed to work with data systems and automation.</p>
+            <div class="photo-container">
+                <img class="sumna-photo" src="PNG/sumna.jpg" alt="self-photo" />
+            </div>
+            <div class="about-container">
+                <p class="about-me">Proud <span class="flag">🇰🇭</span><strong>Cambodian<span class="flag">🇰🇭</span>.</strong>  I enjoy reading, listening to music, and watching t.v.  I love learning to code.  I am currently trying to build a strong foundation in programming and problem-solving.  On path to become a data engineer where I am focusing on developing the technical skills needed to work with data systems and automation.</p>
+            </div>
         </section>
+
         <section id="experience">
             <h2>Experience</h2>
             <div class="experience-info">
@@ -44,25 +50,31 @@
                 </ul>
             </div>
         </section>
+
         <section id="skills">
             <h2>Skills</h2>
             <!-- Empty for now -->
         </section>
+
         <section id="projects">
             <h2>Projects</h2>
             <ul>
                 <!-- Empty for now -->
             </ul>
         </section>
+
         <section id="connect">
             <h2>Connect</h2>
             <div class="connect-links">
                 <a href="mailto:sumnachea85@gmail.com">
                     <i class="fa fa-envelope" style="color: hotpink;"></i>
                 </a>
-                <a href="https://www.github.com/schea85/" target="_blank"> <img class="github-logo" src="PNG/GitHub_Invertocat_Black_Clearspace.png" alt="github-logo" /></a>
+                <a href="https://www.github.com/schea85/" target="_blank"> 
+                    <!--<img class="github-logo" src="PNG/GitHub_Invertocat_Black_Clearspace.png" alt="github-logo" />-->
+                    <i class="fa fa-github" style="color: black;"></i>
+                </a>
                 <a href="https://www.linkedin.com/in/sumna-chea-415483132/" target="_blank" class="linkedin">
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-linkedin" style="color: #0a66c2;"></i>
                 </a>
             </div>
         </section>
