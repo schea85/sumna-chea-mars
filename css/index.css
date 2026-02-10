@@ -40,10 +40,10 @@ body {
     background-color: khaki;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(khaki, hotpink)
 }
 
 h1 {
-    background-color: khaki;
     text-align: center;
     font-size: 4rem;
     padding: 10px;
@@ -159,35 +159,54 @@ ul {
     font-weight: bold;
 }
 
-/* Connect old
-.connect-links {
+/* Message */
+fieldset {
+    padding: 20px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    width: 40%;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    gap: 5px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 10px;
 }
 
-.connect-links a {
-    font-size: 1.5rem;
-    color: hotpink;
+form input {
+    width: 100%;
+    max-width: 200px;
 }
 
-.connect-links a:hover,
-.connect-links a:focus {
-    font-size: 2.5rem;
+label {
+    color: rgb(81, 78, 78);
 }
 
-.github-logo {
-    width: 40px;
+form button {
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: plum;
+    color: rgb(81, 78, 78);
+    margin: 0 auto;
 }
 
-.github-logo:hover,
-.github-logo:focus {
-    width: 80px;
+textarea {
+    width: 100%;
+    max-width: 600px;
 }
-*/
+
+/* Msgs Dom */
+.msgs-list li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
 
 /* Misc. */
 .sumna-photo {
@@ -208,7 +227,7 @@ ul {
 Navigation 
 ========== */
 nav {
-    background-color: orange;
+    background-color: linear-gradient(khaki, orange);
     z-index: 1;
     opacity: .8;
     padding: 10px;
@@ -226,7 +245,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: rgb(246, 246, 242);
+    color: rgb(215, 215, 190);
     -webkit-text-stroke: 2px black;
     text-stroke: 2px black;
     font-size: 1rem;
@@ -257,6 +276,7 @@ nav a:focus {
         flex-direction: row;
         position: sticky;
         top: 0;
+        background-color: orange;
     }
 
     nav ul {

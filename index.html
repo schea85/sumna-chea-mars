@@ -22,6 +22,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#connect">Connect</a></li>
+                <li><a href="#message-me">Message</a></li>
             </ul>
         </nav>
         
@@ -67,7 +68,7 @@
             <h2>Connect</h2>
             <div class="connect-links">
                 <a href="mailto:sumnachea85@gmail.com">
-                    <i class="fa fa-envelope" style="color: hotpink;"></i>
+                    <i class="fa fa-envelope" style="color: orangered;"></i>
                 </a>
                 <a href="https://www.github.com/schea85/" target="_blank"> 
                     <!--<img class="github-logo" src="img/GitHub_Invertocat_Black_Clearspace.png" alt="github-logo" />-->
@@ -78,6 +79,33 @@
                 </a>
             </div>
         </section>
+
+        <section id="message-me">
+            <h2>Leave a Message</h2>
+            <fieldset>
+                <form action="" name="leave_message">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="usersName" required />
+                    
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="usersEmail" required />
+                    
+                    <label for="textbox">Message:</label>
+                    <textarea name="usersMessage" id="textbox" required placeholder="Start typing here..." rows="10"></textarea>
+
+                    <label for="submit"></label>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </fieldset>
+        </section>
+
+        <section id="messages">
+            <h2>Messages</h2>
+            <div>
+                <ul></ul>
+            </div>
+        </section>
+
         <script src="js/index.js"></script>
     </body>
 </html>
