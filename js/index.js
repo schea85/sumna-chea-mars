@@ -87,11 +87,12 @@ fetch("https://api.github.com/users/schea85/repos")
         // }
 
         // filtered projects
-        const projects = ["calculator", "etch-a-sketch", "rock-paper-scissors-game"];
+        const projects = ["calculator", "etch-a-sketch", "rock-paper-scissors-game", "weather-api"];
         const screenshots = {
             "calculator": "img/calculator.png",
             "etch-a-sketch": "img/etchasketch.png",
-            "rock-paper-scissors-game": "img/RPS.png"
+            "rock-paper-scissors-game": "img/RPS.png",
+            "weather-api": "img/weather-api.png"
         };
         
 
@@ -106,7 +107,7 @@ fetch("https://api.github.com/users/schea85/repos")
             project.innerHTML = `
                 <div class="project-card">
                     <img src="${imgSrc}" alt="project screenshot" class="project-img">
-                    <a href="${repo.html_url} target="_blank">
+                    <a href="${repo.html_url}" target="_blank">
                         ${repo.name.toUpperCase().split("-").join(" ")}
                     </a>
                 </div>
