@@ -40,7 +40,8 @@ body {
     background-color: khaki;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(khaki, hotpink)
+    background: linear-gradient(khaki, hotpink);
+    width: 100vw;
 }
 
 h1 {
