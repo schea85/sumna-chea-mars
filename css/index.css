@@ -414,14 +414,6 @@ nav a:focus {
     max-height: 75px;   
     }
 
-    #projects ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    }
-
 }
 
 /* =============
@@ -452,5 +444,13 @@ nav a:focus {
 
     .photo-container {
         max-width: 300px;
+    }
+
+    #projects ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     }
 }
