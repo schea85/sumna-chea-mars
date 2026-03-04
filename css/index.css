@@ -132,7 +132,9 @@ ul {
 }
 
 /* Footer */
-.footer-style {
+footer {
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-size: .8rem;
     color: black;

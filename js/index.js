@@ -1,16 +1,16 @@
 //  Footer DOM
 const footerEl = document.createElement("footer");
+document.body.appendChild(footerEl);
 
 const today = new Date();
 const thisYear = today.getFullYear();
 
-const footer = document.querySelector("footerEl");
+const footer = document.querySelector("footer");
 
 const copyright = document.createElement("p");
-copyright.innerHTML = `<p class="footer-style">&copy; ${thisYear} Sumna Chea</p>`;
+copyright.innerHTML = `&copy; ${thisYear} Sumna Chea`;
 
-document.body.appendChild(footerEl);
-footerEl.appendChild(copyright);
+footer.appendChild(copyright);
 
 //  Skills DOM
 const skills = ["HTML", "CSS", "JavaScript", "GitHub", "VSCode"];
@@ -118,6 +118,6 @@ fetch("https://api.github.com/users/schea85/repos")
 
     })
     .catch((error) => {
-        console.error("Error:", error);
+        console.error(`Error: ${error}`);
     })
 
