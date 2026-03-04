@@ -13,7 +13,7 @@ copyright.innerHTML = `&copy; ${thisYear} Sumna Chea`;
 footer.appendChild(copyright);
 
 //  Skills DOM
-const skills = ["HTML", "CSS", "JavaScript", "GitHub", "VSCode"];
+const skills = ["HTML", "CSS", "JS", "GitHub", "VSCode"];
 const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector("ul");
 
